@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size:medium;
+    cursor: default;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #BB2F3D;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    border-bottom: 2px solid #ccc;
+}
+
+.nav-icon {
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+    stroke: white;
+}
+
+.navbar a {
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 7px;
+}
+
+.navbar a:hover {
+    background-color: #F1C6CA !important;
+    color: black !important;
+}
+
+.navbar a:hover svg {
+    stroke: black;
+}
+
+.navbar a:active {
+    background-color: #E28D95 !important;
+    color: white !important;
+}
+
+.navbar a:active svg {
+    stroke: white;
+}
+
+#page-title {
+    text-align: center;
+    font-family: "Domine";
+    font-weight: normal;
+    font-size: max(8vw, 36pt);
+}
+
+#logo {
+    vertical-align: middle;
+    transition: 0.2s;
+}
+
+#logo:hover {
+    filter: sepia(0.3) brightness(1.2);
+}
+
+footer {
+    background-color: #BB2F3D;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+    border-top: 2px solid #ccc;
+}
