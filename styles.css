@@ -15,9 +15,9 @@ body {
     padding: 0;
 }
 
-/******************
- * NAVBAR STYLING *============================================================
- ******************/
+/***************************
+ * NAVBAR + FOOTER STYLING *===================================================
+ ***************************/
 
 #nav-mobile {
     display: none;
@@ -42,6 +42,17 @@ body {
     justify-content: end;
     border-bottom: 2px solid #ccc;
     transition: 0.3s;
+    z-index: 99;
+}
+
+footer {
+    background-color: #BB2F3D;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+    border-top: 2px solid #ccc;
 }
 
 .nav-icon {
@@ -56,6 +67,7 @@ body {
     font-weight: bold;
     color: white;
     border-radius: 7px;
+    z-index: 100;
 }
 
 .navbar a:hover {
@@ -88,7 +100,7 @@ body {
 }
 
 /******************
- * HEADER STYLING *===========================================================
+ * HEADER STYLING *============================================================
  ******************/
 
 #page-title {
@@ -102,9 +114,13 @@ body {
 .subtitle {
     text-align: center;
     font-family: "Open Sans";
-    font-size: 14pt;
+    font-size: 16pt;
     margin: 0 0 0 0px;
 }
+
+/*******************
+ * SECTION STYLING *===========================================================
+ *******************/
 
 .section-title {
     margin: 35px 15vw;
@@ -112,10 +128,26 @@ body {
     font-size: 24pt;
 }
 
+section:before {
+    height: 40px;
+    content: "";
+    display: block;
+}
+
+section p:last-of-type {
+    margin-bottom: -40px;
+}
+
+#projects p:last-of-type {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
 p {
-    margin: 25px 15vw;
-    font-size: large;
+    margin: 35px 15vw;
+    font-size: larger;
     font-weight: normal;
+    line-height: 2rem;
 }
 
 #logo {
@@ -127,14 +159,90 @@ p {
     filter: sepia(0.3) brightness(1.2);
 }
 
-footer {
-    background-color: #BB2F3D;
+/*************************
+ * PROJECT CARDS STYLING *=====================================================
+ *************************/
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    width: 85%;
+    padding-bottom: 40px;
+}
+
+.thumbnail, .thumbnail-pale {
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.thumbnail:hover {
+    filter: contrast(0.8) brightness(1.2);
+}
+
+.thumbnail-pale:hover {
+    filter: contrast(0.6) brightness(1.2);
+}
+
+.card {
+    background-color: #F1C6CA;
+    flex: 1;
+    border-radius: 4px;
+    padding: 1em;
+    margin: 1.5em;
+    min-width: 300px;
+}
+
+.card-title {
+    font-family: "Domine";
+}
+
+.card p {
+    margin: 0;
+}
+
+.card a {
+    color: hsl(16, 100%, 32%);
+    font-weight: bold;
+}
+
+.card a:hover {
+    color: hsl(16, 100%, 50%);
+}
+
+.card a:active {
+    color: hsl(16, 100%, 62%);
+}
+
+button {
+    background-color: darkslategray;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 32px;
     color: white;
     text-align: center;
-    margin: 0;
-    padding: 5px;
-    width: 100%;
-    border-top: 2px solid #ccc;
+    text-decoration: none;
+    display: inline-block;
+    margin: auto;
+    font-size: 16px;
+    transition-duration: 0.15s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: dimgray;
+}
+
+button:active {
+    background-color: gray;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -142,7 +250,7 @@ footer {
         display: flex;
         justify-content: start;
     }
-    
+
     #nav-desktop {
         top: 65px;
         display: none;
@@ -160,9 +268,9 @@ footer {
     #page-title {
         font-size: 56pt;
     }
-    
+
     .subtitle {
-        font-size: 12pt;
+        font-size: 14pt;
     }
 
     .big-emoji {
@@ -171,18 +279,13 @@ footer {
     }
 
     .section-title {
-        margin: 35px;
+        margin: 35px 75px;
         font-size: 18pt;
     }
 
     p {
-        margin: 35px;
-        font-size: medium;
-    }
-
-    ol, ul {
-        margin: 35px;
-        font-size: medium;
+        margin: 35px 75px;
+        font-size: large;
     }
 
     .external {
@@ -209,5 +312,17 @@ footer {
 @media only screen and (max-width: 520px) {
     #page-title {
         font-size: 42pt;
+    }
+
+    .subtitle {
+        font-size: 12pt;
+    }
+
+    .section-title {
+        margin: 35px;
+    }
+
+    p {
+        margin: 35px;
     }
 }

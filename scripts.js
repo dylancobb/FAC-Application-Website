@@ -67,3 +67,25 @@ window.addEventListener('resize', function (event) {
         tinter.style.display = "none";
     }
 });
+
+// grab project card text
+const descriptions = document.querySelectorAll(".card-text");
+
+// hide project card text by default
+descriptions.forEach(element => {
+    element.style.display = "none";
+});
+
+// toggle project card displays
+function showHideDescription(textID, buttonID) {
+    const text = document.querySelector(textID);
+    const button = document.querySelector(buttonID);
+
+    if (text.style.display === "none") {
+        text.style.display = "block";
+        button.innerHTML = "Show less";
+    } else {
+        text.style.display = "none";
+        button.innerHTML = "Show more";
+    }
+}

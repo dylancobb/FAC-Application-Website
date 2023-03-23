@@ -12,3 +12,5 @@
 - I implemented a screen-covering `<div>` just below the menu, which fades in when the mobile sidebar menu is opened, and fades out when it is closed. Before fading in and after fading out its display is set to "none" so it remains invisible, and it also has an onclick property which closes the menu, so that clicking outside the menu acts as an alternative way to close it.
 # Debugging
 - Getting the menu to display correctly took a *lot* of tweaking. There were a lot of different window-resizing and menu-state eventualities to account for, and failing to do so led to the top navbar disappearing if you increased the window size after opening and closing the side-menu, and similar bugs.
+- Achieving the right font size and margins/spacing at different viewport sizes took some tweaking and A/B testing different values.
+- Integrating the project gallery cards with this page created a problem where hovering over image thumbnails would cause them to suddenly be rendered on top of the navbar. Adding a large z-index to the navbar fixed this.
