@@ -2,7 +2,7 @@
 - I will largely follow the layout plan of my Hobby Page, as that seems appropriate here. Namely:
     - A fixed navbar at the top of the screen, with links + icons to smoothly scroll to the various page sections.
     - A large title at the top of the page, followed by smaller sectional titles.
-    - A simple colour scheme, and simple and effective typography, using Open Sans for the body text and subheadings, and Domine for the page title.
+    - A simple colour scheme, and simple and effective typography, using Open Sans for the body text, and Domine for the page title and subheadings.
 - I will depart from this scheme by putting some of the HTML/CSS/JavaScript chops acquired since the Hobby Page project to use 😁, by:
     - Having the page switch to a togglable menu in the top navbar when viewed on small mobile screens, by manipulating the display of objects and using some kind of `toggleMenu()` function.
     - More actively using JavaScript DOM manipulation throughout the page in general.

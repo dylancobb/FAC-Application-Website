@@ -31,18 +31,20 @@ function toggleMenu() {
 
 // close the menu
 function closeMenu() {
-    setTimeout(() => {
-        menu.style.left = "-300px";
-    }, this.animationDelay + 20);
-    setTimeout(() => {
-        tinter.style.opacity = 0;
-    }, this.animationDelay + 20);
-    setTimeout(() => {
-        menu.style.display = "none";
-        tinter.style.display = "none";
-        menu.style.left = "0px";
-    }, 500);
-    sideBar = false;
+    if (sideBar) {
+        setTimeout(() => {
+            menu.style.left = "-300px";
+        }, this.animationDelay + 20);
+        setTimeout(() => {
+            tinter.style.opacity = 0;
+        }, this.animationDelay + 20);
+        setTimeout(() => {
+            menu.style.display = "none";
+            tinter.style.display = "none";
+            menu.style.left = "0px";
+        }, 500);
+        sideBar = false;
+    }
 }
 
 // make sure screen resizes don't break sidebar functionality
@@ -50,16 +52,16 @@ window.addEventListener('resize', function (event) {
     // check the current width of the window
     const width = window.innerWidth;
     // make sure top-menu is reset
-    if (width > 520) {
+    if (width > 768) {
         menu.style.transitionDuration = "0s";
         menu.style.display = "flex";
         tinter.style.display = "none";
         sideBar = false;
     // if the side menu was open, leave it open
-    } else if (width <= 520 && sideBar) {
+    } else if (width <= 768 && sideBar) {
         menu.style.display = "flex";
     // if the sidebar was closed, leave it close
-    } else if (width <= 520 && !sideBar) {
+    } else if (width <= 768 && !sideBar) {
         menu.style.transitionDuration = "0.3s";
         menu.style.display = "none";
         tinter.style.display = "none";

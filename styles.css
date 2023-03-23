@@ -2,10 +2,14 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Open Sans";
-    font-weight: 700;
-    font-size:medium;
+    font-weight: normal;
+    font-size: medium;
     cursor: default;
     margin: 0;
     padding: 0;
@@ -90,9 +94,28 @@ body {
 #page-title {
     text-align: center;
     font-family: "Domine";
-    font-weight: lighter;
-    font-size: max(8vw, 36pt);
+    font-weight: normal;
+    font-size: 72pt;
     padding: 100px 0px 0px 0px;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 14pt;
+    margin: 0 0 0 0px;
+}
+
+.section-title {
+    margin: 35px 15vw;
+    font-family: "Domine";
+    font-size: 24pt;
+}
+
+p {
+    margin: 25px 15vw;
+    font-size: large;
+    font-weight: normal;
 }
 
 #logo {
@@ -114,11 +137,12 @@ footer {
     border-top: 2px solid #ccc;
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 768px) {
     #nav-mobile {
         display: flex;
         justify-content: start;
     }
+    
     #nav-desktop {
         top: 65px;
         display: none;
@@ -127,8 +151,63 @@ footer {
         width: 300px;
         height: calc(100% - 65px);
     }
+
     #nav-desktop a {
         text-align: left;
         width: 100%;
+    }
+
+    #page-title {
+        font-size: 56pt;
+    }
+    
+    .subtitle {
+        font-size: 12pt;
+    }
+
+    .big-emoji {
+        font-size: 3rem;
+        vertical-align: middle;
+    }
+
+    .section-title {
+        margin: 35px;
+        font-size: 18pt;
+    }
+
+    p {
+        margin: 35px;
+        font-size: medium;
+    }
+
+    ol, ul {
+        margin: 35px;
+        font-size: medium;
+    }
+
+    .external {
+        width: 12px;
+        height: 12px;
+    }
+
+    .image-box {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    figcaption {
+        font-size: small;
+    }
+
+    footer {
+        margin: 40px 0 0 0;
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    #page-title {
+        font-size: 42pt;
     }
 }
