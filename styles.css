@@ -11,6 +11,20 @@ body {
     padding: 0;
 }
 
+/******************
+ * NAVBAR STYLING *============================================================
+ ******************/
+
+#nav-mobile {
+    display: none;
+}
+
+#menu-icon {
+    vertical-align: middle;
+    margin: 0;
+    stroke: white;
+}
+
 .navbar {
     background-color: #BB2F3D;
     margin: 0;
@@ -23,6 +37,7 @@ body {
     flex-direction: row;
     justify-content: end;
     border-bottom: 2px solid #ccc;
+    transition: 0.3s;
 }
 
 .nav-icon {
@@ -57,11 +72,27 @@ body {
     stroke: white;
 }
 
+#tinter {
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    transition: 0.5s;
+}
+
+/******************
+ * HEADER STYLING *===========================================================
+ ******************/
+
 #page-title {
     text-align: center;
     font-family: "Domine";
-    font-weight: normal;
+    font-weight: lighter;
     font-size: max(8vw, 36pt);
+    padding: 100px 0px 0px 0px;
 }
 
 #logo {
@@ -81,4 +112,23 @@ footer {
     padding: 5px;
     width: 100%;
     border-top: 2px solid #ccc;
+}
+
+@media only screen and (max-width: 520px) {
+    #nav-mobile {
+        display: flex;
+        justify-content: start;
+    }
+    #nav-desktop {
+        top: 65px;
+        display: none;
+        flex-wrap: wrap;
+        align-content: start;
+        width: 300px;
+        height: calc(100% - 65px);
+    }
+    #nav-desktop a {
+        text-align: left;
+        width: 100%;
+    }
 }
