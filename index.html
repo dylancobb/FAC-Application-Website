@@ -110,19 +110,22 @@
 						<img src="images/hobby page.png" alt="Hobby page project thumbnail image" width="100%"
 							class="thumbnail" />
 					</a>
-					<h2 class="card-title">Hobby Site</h2>
-					<p id="card1-text" class="card-text">
-						Have you ever crammed for an exam, only to forget everything days later? Do you keep your
-						thoughts
-						spread across half a dozen different notebooks, never knowing where to find the things you've
-						written down when you need them? I designed a simple webpage to showcase the benefits of the
-						Zettelkasten method, which helped me with both problems, and to spread the word about the
-						life-changing app that is Obsidian.
-					</p>
-					<div class="center">
-						<button id="card1-button" onclick="showHideDescription('#card1-text', '#card1-button')">
-							Show more
-						</button>
+					<div class="card-title">
+						<h2>Hobby Site<span id="card1-ellipsis">...</span></h2>
+						<span class="card-button-box">
+							<button id="card1-button" onclick="showHideDescription('#card1-text', '#card1-button', '#card1-ellipsis')">
+								Show more
+							</button>
+						</span>
+					</div>
+					<div id="card1-text" class="card-text">
+						<p>
+							Have you ever crammed for an exam, only to forget everything days later? Do you keep your
+							thoughts spread across half a dozen different notebooks, never knowing where to find the
+							things you've written down when you need them? I designed a simple webpage to showcase the
+							benefits of the Zettelkasten method, which helped me with both problems, and to spread the
+							word about the life-changing app that is Obsidian.
+						</p>
 					</div>
 				</div>
 				<div class="card card2">
@@ -130,25 +133,27 @@
 						<img src="images/2x2.png" alt="Canonic sequences terminal program thumbnail" width="100%"
 							class="thumbnail" />
 					</a>
-					<h2 class="card-title">Canonic Sequence Terminal App</h2>
-					<p id="card2-text" class="card-text">
-						Pursuing this project was what originally got me into coding! I'd been working on an academic
-						musical project examining a class of musical object known as canonic sequences. This was a tool
-						I
-						wrote in the C language to generate a specific subset of these patterns and process them, and
-						create
-						formatted LaTeX files containing data on each pattern along with musical examples
-						algorithmically
-						typeset in LilyPond. The topic is very esoteric, so it's hard to convey how much work was
-						involved,
-						or what it all means, but pursuing this project taught me a lot about algorithms and is really
-						what
-						made me fall in love with programming! 😁
-					</p>
-					<div class="center">
-						<button id="card2-button" onclick="showHideDescription('#card2-text', '#card2-button')">
-							Show more
-						</button>
+					<div class="card-title">
+						<h2>2x2 Terminal App<span id="card2-ellipsis">...</span></h2>
+						<span class="card-button-box">
+							<button id="card2-button" onclick="showHideDescription('#card2-text', '#card2-button', '#card2-ellipsis')">
+								Show more
+							</button>
+						</span>
+					</div>
+					<div id="card2-text" class="card-text">
+						<p>
+							Pursuing this project was what originally got me into coding! I'd been working on an
+							academic musical project examining a class of musical object known as canonic sequences.
+							This was a tool I wrote in the C language to generate a specific subset of these patterns
+							and process them, and create formatted LaTeX files containing data on each pattern along
+							with musical examples algorithmically typeset in LilyPond.
+						</p>
+						<p>
+							The topic is very esoteric, so it's hard to convey how much work was involved, or what it
+							all means, but pursuing this project taught me a lot about algorithms and is really what
+							made me fall in love with programming! 😁
+						</p>
 					</div>
 				</div>
 				<div class="card card3">
@@ -156,25 +161,34 @@
 						<img src="images/pattern explorer.png" alt="Canonic sequence web app thumbnail" width="100%"
 							class="thumbnail-pale" />
 					</a>
-					<h2 class="card-title">Canonic Sequence Web App</h2>
-					<p id="card3-text" class="card-text">
-						This project combined the DOM-manipulation techniques I learned from making this project gallery
-						with my previous, terminal-based program to make a fully interactive web app to explore 2x2
-						canonic
-						sequences. It will hopefully make a nice educational resource for musicians with an interest in
-						theory. The set of all 2x2 canonic sequences is generated algorithmically in JavaScript, and
-						populates a column to the left-hand side of the screen. To the right, details about individual
-						patterns the user clicks on are displayed, and above is a dynamic menu by which they can be
-						filtered. Information about each pattern is also dynamically generated via various algorithms,
-						and even the images were originally compiled from algorithmically generated <a
-							href="https://lilypond.org/" target="_blank">LilyPond</a> code, before being replaced with
-						my own custom canvas-based notation renderer. I also added dynamically-generated audio using the
-						Web Audio API. Over 1,400 lines of JavaScript and counting! 🥳
-					</p>
-					<div class="center">
-						<button id="card3-button" onclick="showHideDescription('#card3-text', '#card3-button')">
-							Show more
-						</button>
+					<div class="card-title">
+						<h2>2x2 Web App<span id="card3-ellipsis">...</span></h2>
+						<span class="card-button-box">
+							<button id="card3-button" onclick="showHideDescription('#card3-text', '#card3-button', '#card3-ellipsis')">
+								Show more
+							</button>
+						</span>
+					</div>
+					<div id="card3-text" class="card-text">
+						<p>
+							This project combined the DOM-manipulation techniques I learned from making this project
+							gallery with my previous, terminal-based program to make a fully interactive web app to
+							explore 2x2 canonic sequences. It will hopefully make a nice educational resource for
+							musicians with an interest in theory.
+						</p>
+						<p>
+							The set of all 2x2 canonic sequences is generated algorithmically in JavaScript, and
+							populates a column to the left-hand side of the screen. To the right, details about
+							individual patterns the user clicks on are displayed, and above is a dynamic menu by which
+							they can be filtered. Information about each pattern is also dynamically generated via
+							various algorithms, and even the images were originally compiled from algorithmically
+							generated <a href="https://lilypond.org/" target="_blank">LilyPond</a> code, before being
+							replaced with my own custom canvas-based notation renderer. I also added
+							dynamically-generated audio using the Web Audio API.
+						</p>
+						<p>
+							Over 1,400 lines of JavaScript and counting! 🥳
+						</p>
 					</div>
 				</div>
 				<div class="card card4">
@@ -182,17 +196,20 @@
 						<img src="images/gallery.png" alt="A picture of this very page" width="100%"
 							class="thumbnail-pale" />
 					</a>
-					<h2 class="card-title">Project Gallery</h2>
-					<p id="card4-text" class="card-text">
-						What programmer doesn't love a bit of recursion? This project taught me a little bit about DOM
-						manipulation with JavaScript, and how to dynamically manipulate th display of information on a
-						page
-						in response to user input.
-					</p>
-					<div class="center">
-						<button id="card4-button" onclick="showHideDescription('#card4-text', '#card4-button')">
-							Show more
-						</button>
+					<div class="card-title">
+						<h2>Project Gallery<span id="card4-ellipsis">...</span></h2>
+						<span class="card-button-box">
+							<button id="card4-button" onclick="showHideDescription('#card4-text', '#card4-button', '#card4-ellipsis')">
+								Show more
+							</button>
+						</span>
+					</div>
+					<div id="card4-text" class="card-text">
+						<p>
+							What programmer doesn't love a bit of recursion? This project taught me a little bit about
+							DOM manipulation with JavaScript, and how to dynamically manipulate th display of
+							information on a page in response to user input.
+						</p>
 					</div>
 				</div>
 				<div class="card card5">
@@ -200,19 +217,22 @@
 						<img src="images/3x3.png" alt="3-voice canonic sequence generator thumbnail" width="100%"
 							class="thumbnail" />
 					</a>
-					<h2 class="card-title">3-voice Canonic App</h2>
-					<p id="card5-text" class="card-text">
-						This algorithm generalises the one the previous two-voice patterns were generated via to three
-						dimensions. At around 140 lines of C, it's a simple terminal app and that produces a list of
-						every
-						possible and "valid" 3-voice, 3-note, note-against-note canonic sequence, expressed numerically.
-						<a href="https://vocaroo.com/12WVRg6U6vrq" target="_blank">Here's an example</a> of one such
-						pattern realised for a few instruments.
-					</p>
-					<div class="center">
-						<button id="card5-button" onclick="showHideDescription('#card5-text', '#card5-button')">
-							Show more
-						</button>
+					<div class="card-title">
+						<h2>3x3 Terminal App<span id="card5-ellipsis">...</span></h2>
+						<span class="card-button-box">
+							<button id="card5-button" onclick="showHideDescription('#card5-text', '#card5-button', '#card5-ellipsis')">
+								Show more
+							</button>
+						</span>
+					</div>
+					<div id="card5-text" class="card-text">
+						<p>
+							This algorithm generalises the one the previous two-voice patterns were generated via to
+							three dimensions. At around 140 lines of C, it's a simple terminal app and that produces a
+							list of every possible and "valid" 3-voice, 3-note, note-against-note canonic sequence,
+							expressed numerically. <a href="https://vocaroo.com/12WVRg6U6vrq" target="_blank">Here's an
+								example</a> of one such pattern realised for a few instruments.
+						</p>
 					</div>
 				</div>
 				<div class="card card6">
@@ -220,35 +240,40 @@
 						<img src="images/movie data.png" alt="Movie Data project thumbnail" width="100%"
 							class="thumbnail" />
 					</a>
-					<h2 class="card-title">Movie Data Project</h2>
-					<p id="card6-text" class="card-text">
-						This page stores a collection of movie data as a JavaScript object and allows the user to view
-						the
-						data, edit individual movies, delete them, or add their own entries. It was a fun exercise in
-						DOM
-						manipulation and interacting with objects in JavaScript!
-					</p>
-					<div class="center">
-						<button id="card6-button" onclick="showHideDescription('#card6-text', '#card6-button')">
-							Show more
-						</button>
+					<div class="card-title">
+						<h2>Movie Data Project<span id="card6-ellipsis">...</span></h2>
+						<span class="card-button-box">
+							<button id="card6-button" onclick="showHideDescription('#card6-text', '#card6-button', '#card6-ellipsis')">
+								Show more
+							</button>
+						</span>
+					</div>
+					<div id="card6-text" class="card-text">
+						<p>
+							This page stores a collection of movie data as a JavaScript object and allows the user to
+							view the data, edit individual movies, delete them, or add their own entries. It was a fun
+							exercise in DOM manipulation and interacting with objects in JavaScript!
+						</p>
 					</div>
 				</div>
 				<div class="card card7">
 					<a href="https://hexmusictheory.github.io/Game/" target="_blank">
 						<img src="images/snake.png" alt="Snake game project thumbnail" width="100%" class="thumbnail" />
 					</a>
-					<h2 class="card-title">Snake Game Project</h2>
-					<p id="card7-text" class="card-text">
-						Recreating the classic game "Snake" in JavaScript was a lot of fun! I learned how to draw onto a
-						canvas element with JavaScript, how to continually redraw objects to create animation, and how
-						to
-						structure a very simple game in general.
-					</p>
-					<div class="center">
-						<button id="card7-button" onclick="showHideDescription('#card7-text', '#card7-button')">
-							Show more
-						</button>
+					<div class="card-title">
+						<h2>Snake Game<span id="card7-ellipsis">...</span></h2>
+						<span class="card-button-box">
+							<button id="card7-button" onclick="showHideDescription('#card7-text', '#card7-button', '#card7-ellipsis')">
+								Show more
+							</button>
+						</span>
+					</div>
+					<div id="card7-text" class="card-text">
+						<p>
+							Recreating the classic game "Snake" in JavaScript was a lot of fun! I learned how to draw
+							onto a canvas element with JavaScript, how to continually redraw objects to create
+							animation, and how to structure a very simple game in general.
+						</p>
 					</div>
 				</div>
 			</div>

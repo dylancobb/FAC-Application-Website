@@ -193,10 +193,22 @@ p {
     padding: 1em;
     margin: 1.5em;
     min-width: 300px;
+    box-shadow: 5px 5px 5px #999;
 }
 
 .card-title {
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.card-title h2{
     font-family: "Domine";
+}
+
+.card-title button {
+    display: inline-block;
 }
 
 .card p {
@@ -217,26 +229,27 @@ p {
 }
 
 button {
-    background-color: darkslategray;
+    background-color: #666;
+    height: 40px;
+    width: 110px;
     border: none;
-    border-radius: 4px;
-    padding: 15px 32px;
+    border-radius: 5px;
     color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     margin: auto;
     font-size: 16px;
-    transition-duration: 0.15s;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 button:hover {
-    background-color: dimgray;
+    background-color: #999;
 }
 
 button:active {
-    background-color: gray;
+    background-color: #aaa;
 }
 
 .center {

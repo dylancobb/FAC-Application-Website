@@ -77,15 +77,18 @@ descriptions.forEach(element => {
 });
 
 // toggle project card displays
-function showHideDescription(textID, buttonID) {
+function showHideDescription(textID, buttonID, ellipsisID) {
     const text = document.querySelector(textID);
     const button = document.querySelector(buttonID);
+    const ellipsis = document.querySelector(ellipsisID);
 
     if (text.style.display === "none") {
         text.style.display = "block";
         button.innerHTML = "Show less";
+        ellipsis.style.display = "none";
     } else {
         text.style.display = "none";
         button.innerHTML = "Show more";
+        ellipsis.style.display = "inline";
     }
 }
