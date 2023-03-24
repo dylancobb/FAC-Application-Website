@@ -212,7 +212,7 @@ p, ul {
 }
 
 .card p {
-    margin: 0;
+    margin: 0 0 1rem 0;
 }
 
 .card a {
@@ -250,6 +250,33 @@ button:hover {
 
 button:active {
     background-color: #aaa;
+}
+
+a.git-link {
+    background-color: #666;
+    height: 40px;
+    padding: 7px;
+    width: 110px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: auto;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+a.git-link:hover {
+    background-color: #999;
+    color: white;
+}
+
+a.git-link:active {
+    background-color: #aaa;
+    color: white;
 }
 
 .center {
