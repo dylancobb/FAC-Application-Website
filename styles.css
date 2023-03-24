@@ -143,7 +143,7 @@ section p:last-of-type {
     padding-bottom: 20px;
 }
 
-p {
+p, ul {
     margin: 35px 15vw;
     font-size: larger;
     font-weight: normal;
@@ -295,7 +295,7 @@ button:active {
         font-size: 18pt;
     }
 
-    p {
+    p, ul {
         margin: 35px 75px;
         font-size: large;
     }
@@ -325,7 +325,7 @@ button:active {
         margin: 35px;
     }
 
-    p {
+    p, ul {
         margin: 35px;
     }
 }
