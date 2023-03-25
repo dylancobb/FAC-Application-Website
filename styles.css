@@ -7,12 +7,16 @@ html {
 }
 
 body {
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-weight: normal;
     font-size: medium;
     cursor: default;
     margin: 0;
     padding: 0;
+}
+
+code {
+    font-family: "Source Code Pro", monospace;
 }
 
 /***************************
@@ -105,7 +109,7 @@ footer {
 
 #page-title {
     text-align: center;
-    font-family: "Domine";
+    font-family: "Domine", serif;
     font-weight: normal;
     font-size: 72pt;
     padding: 100px 0px 0px 0px;
@@ -113,7 +117,7 @@ footer {
 
 .subtitle {
     text-align: center;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 16pt;
     margin: 0 0 0 0px;
 }
@@ -124,7 +128,7 @@ footer {
 
 .section-title {
     margin: 35px 15vw;
-    font-family: "Domine";
+    font-family: "Domine", serif;
     font-size: 24pt;
 }
 
@@ -204,7 +208,7 @@ p, ul {
 }
 
 .card-title h2{
-    font-family: "Domine";
+    font-family: "Domine", serif;
 }
 
 .card-title button {
@@ -277,6 +281,10 @@ a.git-link:hover {
 a.git-link:active {
     background-color: #aaa;
     color: white;
+}
+
+.card-text span {
+    margin-bottom: 1rem;
 }
 
 .center {
