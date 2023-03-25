@@ -13,6 +13,8 @@
 - Dummy text was implemented to make the remaining basic style decisions.
 - I implemented my Project Gallery code for the portfolio, but changed the functionality a little to support multi-paragraph display and be easier to open and close without having to scroll down to find the "Show Less" button.
 - I slowly swapped out the dummy text with hand-written prose.
+- Added a section with `<progress>` elements to show how far I've advanced through various resources over the past month.
+- GitHub repo buttons added to project cards.
 # Debugging
 - Getting the menu to display correctly took a *lot* of tweaking. There were a lot of different window-resizing and menu-state eventualities to account for, and failing to do so led to the top navbar disappearing if you increased the window size after opening and closing the side-menu, and similar bugs.
 - Achieving the right font size and margins/spacing at different viewport sizes took some tweaking and A/B testing different values.
