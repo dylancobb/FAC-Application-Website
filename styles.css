@@ -163,6 +163,54 @@ p, ul {
     filter: sepia(0.3) brightness(1.2);
 }
 
+#myCanvas {
+    margin-top: -30px;
+}
+
+#play-container {
+    height: 57px;
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+}
+
+#rand-button {
+    margin: 5px;
+    height: 47px;
+    padding: 7px 20px;
+    display: flex;
+    background-color: #666;
+    color: white;
+    border-radius: 4px;
+}
+
+#rand-button:hover {
+    background-color: #999;
+}
+
+#rand-button:active {
+    background-color: #aaa;
+}
+
+#play-button {
+    margin: 5px;
+    width: 65px;
+    height: 47px;
+    padding: 10px 20px;
+    display: flex;
+    background-color: #BB2F3D;
+    color: white;
+    border-radius: 4px;
+}
+
+#play-button:hover {
+    background-color: #D55864;
+}
+
+#play-button:active {
+    background-color:#E28D95;
+}
+
 /*************************
  * PROJECT CARDS STYLING *=====================================================
  *************************/

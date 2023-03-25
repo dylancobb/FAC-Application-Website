@@ -15,7 +15,11 @@
 - I slowly swapped out the dummy text with hand-written prose.
 - Added a section with `<progress>` elements to show how far I've advanced through various resources over the past month.
 - GitHub repo buttons added to project cards.
+- I implemented my canonic sequence generation code, music notation rendering code, and audio generation code to produce a small canvas window and populate it with patterns which can be randomly selected and displayed.
+- Implemented a function to display the first pattern when the page is scrolled far enough for the staff lines to be well inside the viewport.
 # Debugging
 - Getting the menu to display correctly took a *lot* of tweaking. There were a lot of different window-resizing and menu-state eventualities to account for, and failing to do so led to the top navbar disappearing if you increased the window size after opening and closing the side-menu, and similar bugs.
 - Achieving the right font size and margins/spacing at different viewport sizes took some tweaking and A/B testing different values.
 - Integrating the project gallery cards with this page created a problem where hovering over image thumbnails would cause them to suddenly be rendered on top of the navbar. Adding a large z-index to the navbar fixed this.
+- Positioning the canvas for the musical notation took some tweaking.
+- Getting the filters to be preset rather than manually selected like in the 2x2 web app meant I had to change the way a lot of the functions work.

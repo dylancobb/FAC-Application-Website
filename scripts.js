@@ -1,3 +1,7 @@
+/******************
+ * Menu Behaviour *============================================================
+ ******************/
+
 let sideBar = false;
 const menu = document.getElementById("nav-desktop");
 const tinter = document.getElementById("tinter");
@@ -67,6 +71,10 @@ window.addEventListener('resize', function (event) {
         tinter.style.display = "none";
     }
 });
+
+/*****************
+ * Project Cards *=============================================================
+ *****************/
 
 // grab project card text
 const descriptions = document.querySelectorAll(".card-text");
