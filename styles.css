@@ -144,7 +144,7 @@ section p:last-of-type {
 
 #projects p:last-of-type {
     margin-bottom: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 p, ul {
@@ -152,15 +152,6 @@ p, ul {
     font-size: larger;
     font-weight: normal;
     line-height: 2rem;
-}
-
-#logo {
-    vertical-align: middle;
-    transition: 0.2s;
-}
-
-#logo:hover {
-    filter: sepia(0.3) brightness(1.2);
 }
 
 #myCanvas {
@@ -222,7 +213,7 @@ p, ul {
     align-items: flex-start;
     flex-flow: row wrap;
     width: 85%;
-    padding-bottom: 40px;
+    margin-top: -20px;
 }
 
 .thumbnail, .thumbnail-pale {
@@ -341,6 +332,10 @@ a.git-link:active {
     align-items: center;
 }
 
+.last {
+    margin-bottom: 40px;
+}
+
 /*****************
  * MEDIA QUERIES *=============================================================
  *****************/
@@ -381,17 +376,6 @@ a.git-link:active {
     p, ul {
         margin: 35px 75px;
         font-size: large;
-    }
-
-    .external {
-        width: 12px;
-        height: 12px;
-    }
-
-    .image-box {
-        float: none;
-        display: block;
-        margin: auto;
     }
 }
 
